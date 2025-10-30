@@ -1,0 +1,30 @@
+From: Mail Delivery System <mailer-daemon@mx.example.net>
+To: no-reply@updates.example
+Subject: Delivery Status Notification (Failure) - Service Update Notification
+Date: Thu, 30 Oct 2025 12:00:00 +0000
+
+Message-ID: <dSN-550-unknown-20251030-120000@mx.example.net>
+Original-Message-ID: <updates-20251030-115900@updates.example>
+X-Envelope-From: no-reply@updates.example
+X-Envelope-To: updates-recipient@example.com
+Reporting-MTA: dns; mx.example.net
+Received-From-MTA: dns; smtp-out.updates.example
+Arrival-Date: Thu, 30 Oct 2025 12:00:00 +0000
+X-Bounce-Category: hard
+
+This is the mail system at host mx.example.net.
+
+Your message could not be delivered to one or more recipients.
+
+Original-Subject: Service Update Notification
+Original-Recipient: updates-recipient@example.com
+
+<updates-recipient@example.com>: host mail.example.com said:
+    550 5.1.1 <updates-recipient@example.com>: Recipient address rejected:
+    User unknown in local recipient table
+    (in reply to RCPT TO command)
+
+Final-Recipient: rfc822; updates-recipient@example.com
+Action: failed
+Status: 5.1.1
+Diagnostic-Code: smtp; 550 5.1.1 User unknown in local recipient table
