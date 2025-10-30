@@ -1,0 +1,27 @@
+From: Mail Delivery System <mailer-daemon@mx.example.net>
+To: no-reply@updates.example
+Subject: Undeliverable: Service Update Notification
+Date: Thu, 30 Oct 2025 12:05:00 +0000
+
+Message-ID: <dsn-552-mailboxfull-20251030-120500@mx.example.net>
+Original-Message-ID: <updates-20251030-120000@updates.example>
+X-Envelope-From: no-reply@updates.example
+X-Envelope-To: updates.mailbox@example.com
+Reporting-MTA: dns; mx.example.net
+Received-From-MTA: dns; smtp-out.updates.example
+Arrival-Date: Thu, 30 Oct 2025 12:05:00 +0000
+X-Bounce-Category: soft_full
+
+Delivery has failed to these recipients or groups:
+
+updates.mailbox@example.com
+Your message wasn't delivered because the recipient's mailbox is full.
+
+Diagnostic information for administrators:
+
+Remote Server returned '552 5.2.2 <updates.mailbox@example.com>: Mailbox full, over quota'
+
+Final-Recipient: rfc822; updates.mailbox@example.com
+Action: delayed
+Status: 4.2.2
+Diagnostic-Code: smtp; 552 5.2.2 Mailbox full, over quota
