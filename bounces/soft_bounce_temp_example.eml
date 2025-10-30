@@ -1,0 +1,29 @@
+From: Mail Delivery System <mailer-daemon@mx.example.net>
+To: no-reply@updates.example
+Subject: Delivery Status Notification (Delay) - Service Update Notification
+Date: Thu, 30 Oct 2025 12:10:00 +0000
+
+Message-ID: <dsn-451-tempdelay-20251030-121000@mx.example.net>
+Original-Message-ID: <updates-20251030-120500@updates.example>
+X-Envelope-From: no-reply@updates.example
+X-Envelope-To: updates.queue@example.net
+Reporting-MTA: dns; mx.example.net
+Received-From-MTA: dns; smtp-out.updates.example
+Arrival-Date: Thu, 30 Oct 2025 12:10:00 +0000
+X-Bounce-Category: soft_temp
+
+THIS IS A WARNING MESSAGE ONLY.
+
+Delivery to the following recipients has been delayed.
+
+updates.queue@example.net
+
+Message will be retried for 2 more day(s)
+
+Technical details of temporary failure:
+451 4.4.1 Temporary network problem. Please try again later.
+
+Final-Recipient: rfc822; updates.queue@example.net
+Action: delayed
+Status: 4.4.1
+Diagnostic-Code: smtp; 451 4.4.1 Temporary network problem
